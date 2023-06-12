@@ -169,8 +169,16 @@ header .icons #menu-bars{
 
 .dished .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
     gap:1.5rem;
+}
+
+.dished .sub-heading{
+    font-size: 1.4rem;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    color: var(--light-color);
+    font-weight: 400;
 }
 
 .dished .box-container .box{
@@ -261,7 +269,7 @@ header .icons #menu-bars{
 }
 
 .about .row .content{
-    flex: 1 1 45rem;
+    flex: 1 1 40rem;
 }
 
 .about .row .content h3{
