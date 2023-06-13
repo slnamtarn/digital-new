@@ -1,0 +1,10 @@
+#scada{
+  background: url("") no-repeat;
+  background-size: cover;
+  height: 120vh;
+}
+
+#scada .container{
+    width: 100rem;
+    margin-top: 5rem;
+}

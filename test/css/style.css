@@ -470,7 +470,7 @@ header .icons #menu-bars{
     font-size: 1.6rem;
 }
 
-.slider-area h3{
+.client .slider-area h3{
     text-align: center;
     color: var(--black);
     font-size: 3rem;
@@ -478,15 +478,64 @@ header .icons #menu-bars{
     text-transform: upperca
 
 }
+.client{ 
+    background: white !important;
+    justify-content: center;
+    display: grid;
+}
+.client .slider-area{
+    display: grid;
+    width: 100%;
+}
+.client .slider-area .wrapper{
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    border-radius: 180px;
+    padding: 2.5rem;
+    background: #eee;
+    border: 0.1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow) ;
+}
+
+.client .slider-area .wrapper .item{
+    animation: animate 10s alternate linear infinite;
+    
+}
+
+.client .wrapper .item img{
+    height: 8rem;
+    width: 8rem;
+    margin: 0 2rem;
+}
+
+.client .wrapper:hover .item{
+   animation-play-state: paused;
+}
 
 
+@keyframes animate{
+    0%{
+        transform: translate3d(0, 0, 0);
+    }
+    100%{
+        transform: translate3d(-1100px, 0, 0);
+    }
+}
 
+@media screen and (max-width: 767px) {
+    .client .slider-area h3{
+        font-size: 5rem;
+    }
+}
 
 @media (max-width:768px){
 
     header .icons #menu-bars{
         display: inline-block;
     }
+
+
 
     header .navbar{
         position: absolute;
