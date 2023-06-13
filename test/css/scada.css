@@ -1,10 +1,30 @@
 #scada{
-  background: url("") no-repeat;
+  background-image: url("/test/image/scada/home.jpg");
   background-size: cover;
-  height: 120vh;
+  background-repeat: no-repeat;
+  height: 85vh;
 }
 
 #scada .container{
-    width: 100rem;
-    margin-top: 5rem;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  width: 70%;
+}
+
+#scada .header span{
+  color: var(--green);
+  font-size: 2.5rem;
+}
+
+#scada .header h3{
+  color: var(--black);
+  font-size: 7rem;
+}
+
+#scada .header p{
+  color: var(--light-color);
+  font-size: 2.2rem;
+  padding: .5rem 0;
+  line-height: 1.5;
+
 }
