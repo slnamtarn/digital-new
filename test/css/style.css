@@ -457,17 +457,6 @@ header .icons #menu-bars{
     line-height: 1.5;
 }
 
-.content a{
-    margin-top: 1rem;
-    display: inline-block;
-    font-size: 1.7rem;
-    color: #fff;
-    background: var(--black);
-    border-radius: .5rem;
-    cursor: pointer;
-    padding: .8rem 3rem;
-}
-
 .card .posted-date{
     position: absolute;
     top: 0;
@@ -479,6 +468,15 @@ header .icons #menu-bars{
 
 .card .posted-date p{
     font-size: 1.6rem;
+}
+
+.slider-area h3{
+    text-align: center;
+    color: var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: upperca
+
 }
 
 
