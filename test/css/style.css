@@ -432,11 +432,13 @@ header .icons #menu-bars{
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 3.2rem; 
     margin-top: 2rem;
+    
 }
 
 .cards .card{
     width: 100%;
     position: relative;
+    box-shadow: var(--box-shadow);
 }
 
 .image-section img{

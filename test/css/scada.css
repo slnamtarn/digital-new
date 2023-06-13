@@ -2,7 +2,6 @@
   background-image: url("/test/image/scada/home.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 85vh;
 }
 
 #scada .container{
@@ -24,7 +23,112 @@
 #scada .header p{
   color: var(--light-color);
   font-size: 2.2rem;
-  padding: .5rem 0;
-  line-height: 1.5;
+    padding: .5rem 0;
+    line-height: 1.5;
 
 }
+
+.what-scada{
+  background-color: white !important;
+}
+
+.what-scada .container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15rem;
+  padding-top: 9rem;
+}
+
+.what-scada .container .content{
+  flex: 1 1 45rem;
+}
+
+.what-scada .container .image{
+  flex: 1 1 45rem;
+}
+.what-scada .container .image img{
+  width: 100%;
+}
+
+.what-scada .container .content h3{
+  color: var(--black);
+  font-size: 4rem;
+  margin-bottom: 5%;
+}
+
+.what-scada .container .content p{
+  color: var(--light-color);
+    font-size: 1.6rem;
+    padding: .5rem 0;
+    line-height: 1.5;
+}
+
+.what-scada .container .content:hover .decoration{
+  color: var(--light-color);
+  font-weight: 700;
+}
+
+.component{
+  /* background-color: aquamarine; */
+  width: 100%;
+
+}
+
+.component .container .box-container{
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10rem;
+  justify-content: center;
+}
+
+.component .container .box-container .box{
+  width: 300px;
+  height: auto;
+  margin: 0 10px;
+  background-color: #eee;
+  flex-direction: column;
+  box-shadow: var(--box-shadow);
+}
+
+.component .container .box-container .box .icon{
+  width: 80px;
+  height: 80px;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #eee;
+  border: 2px solid var(--green);
+  transform: .5s;
+}
+
+.component .container .box-container .box:hover .icon{
+  transform: translateX(-35%) rotate(-45deg);
+  background-color: var(--green);
+  
+}
+
+.component .container .box-container .box .icon .fas{
+  line-height: 80px;
+  color: var(--green);
+  font-size:  2.3em;
+  transform: .5s;
+}
+
+.component .container .box-container .box:hover .icon .fas{
+  transform: rotate(45deg);
+  color: white;
+
+}
+
+.component .container .box-container .box .content{
+ position: relative;
+ top: -20px;
+ 
+}
+

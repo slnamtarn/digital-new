@@ -8,13 +8,16 @@
 
 <link rel="stylesheet" href="css/scada.css">
 <link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
 <body>
 
     <header>
         <a href="#" class="logo">test</a>
 
         <nav class="navbar">
-            <a class="active" href="#home">home</a>
+            <a class="active" href="index.html">home</a>
             <a href="#dished">disched</a>
             <a href="#about">about</a>
             <a href="#menu">menu</a>
@@ -46,8 +49,85 @@
     </section>
 
     <section class="what-scada" id="what-scada">
-        
+        <div  class="container">
+            <div class="content">
+                <!-- <span>One of the most commonly used types of industrial control system, SCADA can be used to manage almost any type of industrial process.</span> -->
+                <h3>how does <span style="color: #27ae60;"> SCADA </span> work?</h3>
+           
+                <p>SCADA systems include hardware and software components. <span class="decoration"> The hardware gathers and feeds data into field controller systems, which forward the data to other systems that process and present it to a human-machine interface (HMI) in a timely manner. </span> SCADA systems also record and log all events for reporting process status and issues. SCADA applications warn when conditions become hazardous by sounding alarms.</p>
+          </div>
+
+            <div class="image">
+                <img src="./images/pngegg (18).png" width="500px" alt="" />
+            </div>
+        </div>
     </section>
-   
+
+    <section class="component" id="component">
+        <div class="container">
+
+            <h3 class="heading" style="padding-bottom: 5rem;"> <span style="color: #27ae60;"> COMPONENT </span> of a SCADA system </h3>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <div class="content">
+                        <h4>test</h4>
+                        <p>Sensors and actuators. A sensor is a feature of a device or system that detects inputs from industrial processes. An actuator is a feature of the device or system that controls the mechanism of the process. In simple terms, a sensor functions like a gauge or meter, which displays the status of a machine; an actuator acts like a switch, dial or control valve that can be used to control a device. Both sensors and actuators are controlled and monitored by SCADA field controllers.</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <div class="content">
+                        <h4>test</h4>
+                        <p>SCADA field controllers. These interface directly with sensors and actuators. There are two categories of field controllers:
+                            1.Remote telemetry units, also called remote terminal units (RTUs), interface with sensors to collect telemetry data and forward it to a primary system for further action.
+                            2.Programmable logic controllers (PLCs) interface with actuators to control industrial processes, usually based on current telemetry collected by RTUs and the standards set for the processes.</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <div class="content">
+                        <h4>test</h4>
+                        <p>
+                          HMI software. This provides a system that consolidates and presents data from SCADA field devices and enables operators to understand and, if needed, modify the status of SCADA-controlled processes.</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <div class="content">
+                        <h4>test</h4>
+                        <p>
+                         SCADA supervisory computers. These control all SCADA processes and are used to gather data from field devices and to send commands to those devices to control industrial processes.</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <div class="content">
+                        <h4>test</h4>
+                        <p>
+                            Communication infrastructure. This enables SCADA supervisory systems to communicate with field devices and field controllers. This infrastructure enables SCADA systems to collect data from field devices and to control those devices.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
 </body>
 </html>
