@@ -69,88 +69,71 @@ section:nth-child(odd){
 header{
     position: fixed;
     top: 0;
-    right: 0;
     left: 0;
+    right: 0;
     background: #fff;
-    padding:1rem 7%;
+    box-shadow: var(--box-shadow);
+    padding: 0px 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    box-shadow: var(--box-shadow);
 }
 
 header .logo{
-    color: var(--black);
-    font-size: 2.5rem;
     font-weight: bolder;
+    font-size: 25px;
+    color: #333;
 }
 
 header .navbar ul{
-    display: flex;
-    align-items: center;
-}
-header .navbar li{
-   list-style: none;
-   display: flex;
-   position: relative;
+    list-style: none;
 }
 
-header .navbar a{
-    font-size: 1.7rem;
-    border-radius: .5rem;
-    padding: 15px 30px;
-    color: var(--light-color);
+header .navbar ul li{
     position: relative;
+    float: left;
 }
 
-header .navbar .dropdown{
-    position: absolute;
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: #333;
     display: block;
-    background-color: #fff;
-    top: 120%;
-    padding: 15px 30px;
-    transition: 0.3s;
-    opacity: 0;
-    visibility: hidden;
 }
 
-header .navbar .dropdown-link:hover .dropdown {
-    top: 105%;
-    opacity: 1;
-    visibility: visible;
-  }
-  header .navbar .dropdown-link:hover a i {
-    transform: rotate(-180deg);
-  }
+header .navbar ul li a:hover{
+    font-size: 20px;
+    padding: 20px;
+    color:var(--green);
+    display: block;
+}
 
-/* header .navbar a.active,
-header .navbar a:hover{
-    color: #fff;
-    height: 3px;
-    background-image: linear-gradient(to right,#2aba4d, #12a2af);
-} */
-
-header .navbar a::after{
-    content: '';
+header .navbar ul li ul{
     position: absolute;
-    width: 0%;
-    height: 3px;
-    background-image: linear-gradient(to right,#2aba4d, #12a2af);
-    bottom: -1px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 25px;
-    transition: .5s;
-
-}
-    header .navbar a:hover::after{
-
-    width: 60%;
-    opacity: 1;
-    
+    left: 0;
+    width: 220px;
+    background: #fff;
+    display: none;
 }
 
+header .navbar ul li ul li{
+    width:100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+ header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+ }
+
+header .navbar ul li:focus-within > ul{
+    display: initial;
+ }
+
+ header .navbar ul li:hover > ul{
+    display: initial;
+ }
 
 header .icons a,
 header .icons i{
