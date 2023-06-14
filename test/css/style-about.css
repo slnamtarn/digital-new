@@ -23,6 +23,14 @@ hr {
 h2, p, span, b, li {
     font-family: 'Krub', sans-serif;
 }
+
+/* =========== header section ============= */
+@media screen and (max-width: 992px) {
+    header {
+        
+    }
+}
+
 /* ============ home section =============== */
 #hero {
     width: 100%;
@@ -32,8 +40,8 @@ h2, p, span, b, li {
 
 #hero .card {
     margin-top: 13vh;
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 #hero .card .content-img img{
@@ -101,53 +109,12 @@ h2, p, span, b, li {
 #more {
     display: none;
 }
-/* ======= content section ======= */
-#content .col-2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 1rem;
-}
 
-#content .row-1 {
-    margin-top: 10px;
-}
-
-#content .vision {
-    padding: 10%;
-    border-style: outset;
-    border-radius: 2rem;
-}
-
-#content .vision:hover {
-    background-color: var(--green);
-    color: cornsilk;
-}
-
-#content .vision h2 {
-    font-size: 5rem;
-    text-align: center;
-}
-
-#content .row-1 .vision h2 {
-    font-size: 5rem;
-    text-align: start;
-}
-
-#content .vision .paragragh p{
-    font-size: 1.55rem;
-    font-weight: 300;
-    margin-top: 20px;
-    line-height: 1.75;
-}
-
-#content .vision .paragragh li {
-    font-size: 1.55rem;
-    line-height: 1.75;
-}
-
-#content .col-2 .vision .rmore {
-    display: flex;
-    justify-content: end;
+@media screen and (max-width: 992px) {
+    #hero .card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 /* ====== vision section ======= */
@@ -165,11 +132,43 @@ h2, p, span, b, li {
     padding-top: 10px;
 }
 
+@media screen and (max-width: 992px) {
+    #vision {
+        align-content: center;
+    }
+}
+
 
 /* =========== mission section ============= */
+#mission {
+    margin-top: 3%;
+    background-color: white;
+}
+
+#mission h2 {
+    font-size: 7rem;
+    text-align: center;
+}
+
 #mission .body-text {
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    margin: 0 10px;
+}
+
+#mission .body-text .card {
+    width: 330px;
+    height: 350px;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    border-radius: 5rem;
+}
+
+#mission .body-text .card p {
+    padding: 10%;
+    font-size: 1.75rem;
+    font-weight: 300;
+    line-height: 1.75;
 }
 
 /* ======= footer section ====== */
