@@ -139,7 +139,7 @@ body{
 .info .infoBox .box span{
     min-width: 40px;
     height: 40px;
-    color: fff;
+    color: #fff;
     background: var(--green);
     display: flex;
     justify-content: center;
@@ -161,7 +161,7 @@ body{
 }
 
 .sci {
-   margin-top: 40px; 
+
    display: flex;
    gap: 10px;
    justify-content: center;
