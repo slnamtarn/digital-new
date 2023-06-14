@@ -625,5 +625,9 @@ header .icons #menu-bars{
     .cards{
         grid-template-columns: (2, 1fr);
     }
+
+    .contactUs{
+        padding: 20px;
+    }
     
 }
