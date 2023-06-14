@@ -26,11 +26,11 @@
       <a href="#" class="logo">test</a>
 
       <nav class="navbar">
-        <a class="active" href="#about">Home</a>
-        <a href="#dished">company</a>
-        <a href="#about">vision</a>
-        <a href="#menu">mission</a>
-        <a href="#review">safety</a>
+        <a class="active" href="#hero">Home</a>
+        <a href="#content">vision&mission</a>
+        <a href="#vision">vision</a>
+        <a href="#mission">mission</a>
+        <a href="#safety">safety</a>
       </nav>
 
       <div class="icons">
@@ -42,167 +42,204 @@
     </header>
     <!-- header section end -->
 
-    <!-- home section start -->
+    <!-- hero section start -->
 
-    <section class="home" id="home">
-      <div class="swiper home-slider">
-        <div class="swiper-wrapper wrapper">
-          <div class="swiper-slide slide">
-            <div class="content">
-              <span>About</span>
-              <h3>Company Profile</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
-                consequatur consectetur facere.
-              </p>
-              <a href="#" class="btn">learn more</a>
-            </div>
-            <div class="image">
-              <img src="image/home-1.jpg" width="350" alt="" />
-            </div>
-          </div>
-
-          <div class="swiper-slide slide">
-            <div class="content">
-              <span>About</span>
-              <h3>Vision</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
-                consequatur consectetur facere.
-              </p>
-              <a href="#" class="btn">learn more</a>
-            </div>
-            <div class="image">
-              <img src="image/home-2.png" width="350" alt="" />
-            </div>
-          </div>
-
-          <div class="swiper-slide slide">
-            <div class="content">
-              <span>About</span>
-              <h3>Mission</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
-                consequatur consectetur facere.
-              </p>
-              <a href="#" class="btn">learn more</a>
-            </div>
-            <div class="image">
-              <img src="image/home-3.png" width="350" alt="" />
-            </div>
-          </div>
-
-          <div class="swiper-slide slide">
-            <div class="content">
-              <span>About</span>
-              <h3>Safety</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
-                consequatur consectetur facere.
-              </p>
-              <a href="#" class="btn">learn more</a>
-            </div>
-            <div class="image">
-              <img src="image/home-4.png" width="350" alt="" />
-            </div>
-          </div>
+    <section class="hero" id="hero">
+      <div class="card">
+        <div class="content-img">
+          <img src="/image/about-page/team-1.jpg" />
         </div>
-
-        <div class="swiper-pagination"></div>
+        <div class="content">
+          <h2>ประวัติความเป็นมา</h2>
+          <div class="paragraph">
+            <p>
+              Digital Access Co., Ltd. เป็นบริษัทที่ก่อตั้งขึ้นในปี 2010
+              โดยกลุ่มผู้เชี่ยวชาญด้านดิจิทัลแอสเสทที่มีประสบการณ์และความชำนาญในวงการเทคโนโลยีและการสื่อสาร
+              ซึ่งบริษัทมีเป้าหมายในการพัฒนาและให้บริการแก่ลูกค้าในด้านดิจิทัลแอสเสท
+              รวมถึงการออกแบบและพัฒนาเว็บไซต์ แอปพลิเคชันมือถือ การตลาดออนไลน์
+              การจัดการข้อมูล การประชาสัมพันธ์ออนไลน์
+              และการบริหารจัดการทรัพยากรในองค์กร
+              บริษัทจึงมุ่งมั่นในการใช้เทคโนโลยีที่ทันสมัยและนวัตกรรมเพื่อสร้างประสบการณ์ที่ดีที่สุดให้แก่ลูกค้าและให้บริการที่มีคุณภาพและเป็นไปตามความต้องการของลูกค้า
+              <span id="dots">...</span><br /><br /><span id="more">
+                ดิจิทัลแอสเสทคือหลักการทำให้ผู้คนสามารถเข้าถึงและประสบความสำเร็จในโลกดิจิทัลได้
+                บริษัท Digital Access Co., Ltd.
+                ใส่ใจในการพัฒนาและให้คำแนะนำในการใช้เทคโนโลยีเพื่อให้ลูกค้าสามารถนำเสนอผลิตภัณฑ์และบริการของพวกเขาได้อย่างดียิ่งขึ้น
+              </span>
+            </p>
+            <div class="rmore">
+              <button onclick="myFunction()" id="myBtn">Read more</button>
+            </div>
+          </div>
+          <!-- <div class="buttom">
+            <button>contact</button>
+          </div> -->
+        </div>
       </div>
     </section>
 
-    <!-- home section end -->
+    <!-- hero section end -->
 
-    <!-- company section start -->
+    <div class="border-brack">
+      <hr />
+    </div>
 
-    <section class="company" id="company">
-      <div class="col">
-        <div class="col-img">
-          <img src="image/about-page/company2.png" width="400" alt="" />
-        </div>
-        <div class="col-content">
-          <h3>Company Profile</h3>
-          <div class="content-c">
+    <!-- content section start -->
+
+    <!-- <section id="content">
+      <div class="col-2">
+        <div class="vision">
+          <h2>Vision</h2>
+          <div class="paragragh">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quod
-              ratione dignissimos totam illo aliquam ipsa soluta impedit vel
-              adipisci.
+              <b>วิสัยทัศน์:</b>
+              "เป็นผู้นำด้านดิจิทัลแอสเสทที่สร้างสรรค์และประสิทธิภาพ
+              ให้ลูกค้าของเราบทบาทหน้าที่ที่ดีที่สุดในโลกดิจิทัล"
+            </p>
+          </div>
+        </div>
+        <div class="vision">
+          <h2>Mission</h2>
+          <div class="paragragh">
+            <p><b>พันธกิจ:</b></p>
+            <ul style="list-style-type: number">
+              <li>
+                ให้บริการดิจิทัลแอสเสทที่เป็นเอกลักษณ์:
+                พัฒนาและให้บริการผลิตภัณฑ์ดิจิทัลแอสเสทที่สร้างคุณค่าและประสิทธิภาพสูงสุดให้กับลูกค้า
+                โดยใช้เทคโนโลยีทันสมัยและการออกแบบที่นวัตกรรมเพื่อตอบสนองความต้องการของลูกค้าอย่างมีคุณภาพและเป็นไปตามเป้าหมายทางธุรกิจของพวกเขา.
+              </li>
+              <li>
+                สร้างความสำเร็จร่วมกัน:
+                เป็นพาร์ทเนอร์ที่น่าเชื่อถือและมีความรับผิดชอบในการสร้างความสำเร็จร่วมกันกับลูกค้า
+                โดยให้คำปรึกษาทางธุรกิจและเครื่องมือดิจิทัลที่ช่วยเสริมสร้างและปรับปรุงธุรกิจของลูกค้าให้เติบโตอย่างยั่งยืน.
+              </li>
+              <li>
+                  สร้างความเชื่อมั่นและความพึงพอใจ:
+                  ให้บริการที่มีคุณภาพสูงและเป็นไปตามความต้องการของลูกค้า
+                  ด้วยการให้คำปรึกษาที่ถูกต้องและเชื่อ
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="vision">
+          <h2>Safety</h2>
+          <div class="paragragh">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+              velit quae quis facere, est consectetur amet perferendis
+              consequuntur nesciunt voluptatum reprehenderit odit eius accusamus
+              nisi, rerum repellat iure maiores quam tempora numquam laboriosam
+              illum incidunt ipsam. Temporibus recusandae error aspernatur odit
+              veniam ullam molestias nulla, voluptate quae laudantium quod
+              debitis.
             </p>
           </div>
         </div>
       </div>
-    </section>
+      <div class="row-1">
+        <div class="vision">
+          <h2>Safety</h2>
+          <div class="paragragh">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+              velit quae quis facere, est consectetur amet perferendis
+              consequuntur nesciunt voluptatum reprehenderit odit eius accusamus
+              nisi, rerum repellat iure maiores quam tempora numquam laboriosam
+              illum incidunt ipsam. Temporibus recusandae error aspernatur odit
+              veniam ullam molestias nulla, voluptate quae laudantium quod
+              debitis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
 
-    <!-- company section end -->
+    <!-- content section end -->
 
     <!-- vision section start -->
-
     <section id="vision">
-      <div class="card">
-        <div class="col-left">
-          <h3>Vision</h3>
-          <div class="contant">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-              vel? Quaerat inventore necessitatibus dolor quisquam fuga sequi
-              pariatur expedita labore.
-            </p>
-          </div>
-        </div>
-        <div class="col-right">
-          <img src="image/about-page/company2.png" width="400" alt="" />
-        </div>
+      <h2>Vision</h2>
+      <div class="body-text">
+        <p>
+          <b>วิสัยทัศน์:</b>
+          "เป็นผู้นำด้านดิจิทัลแอสเสทที่สร้างสรรค์และประสิทธิภาพ
+          ให้ลูกค้าของเราบทบาทหน้าที่ที่ดีที่สุดในโลกดิจิทัล"
+        </p>
       </div>
     </section>
-
     <!-- vision section end -->
 
     <!-- mission section start -->
-
     <section id="mission">
-      <div class="card">
-        <div class="col-left">
-          <h3>Mission</h3>
-          <div class="contant">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-              vel? Quaerat inventore necessitatibus dolor quisquam fuga sequi
-              pariatur expedita labore.
-            </p>
-          </div>
-        </div>
-        <div class="col-right">
-          <img src="image/about-page/company2.png" width="400" alt="" />
-        </div>
+      <h2>Mission</h2>
+      <p><b>พันธกิจ:</b></p>
+      <div class="body-text">
+        <ul style="list-style-type: number">
+          <li>
+            ให้บริการดิจิทัลแอสเสทที่เป็นเอกลักษณ์:
+            พัฒนาและให้บริการผลิตภัณฑ์ดิจิทัลแอสเสทที่สร้างคุณค่าและประสิทธิภาพสูงสุดให้กับลูกค้า
+            โดยใช้เทคโนโลยีทันสมัยและการออกแบบที่นวัตกรรมเพื่อตอบสนองความต้องการของลูกค้าอย่างมีคุณภาพและเป็นไปตามเป้าหมายทางธุรกิจของพวกเขา.
+          </li>
+          <li>
+            สร้างความสำเร็จร่วมกัน:
+            เป็นพาร์ทเนอร์ที่น่าเชื่อถือและมีความรับผิดชอบในการสร้างความสำเร็จร่วมกันกับลูกค้า
+            โดยให้คำปรึกษาทางธุรกิจและเครื่องมือดิจิทัลที่ช่วยเสริมสร้างและปรับปรุงธุรกิจของลูกค้าให้เติบโตอย่างยั่งยืน.
+          </li>
+          <li>
+            สร้างความเชื่อมั่นและความพึงพอใจ:
+            ให้บริการที่มีคุณภาพสูงและเป็นไปตามความต้องการของลูกค้า
+            ด้วยการให้คำปรึกษาที่ถูกต้องและเชื่อ
+          </li>
+        </ul>
       </div>
     </section>
-
     <!-- mission section end -->
 
-    <!-- mission section start -->
-
-    <section id="safety">
-      <div class="card">
-        <div class="col-left">
-          <img src="image/about-page/company2.png" width="400" alt="" />
+    <!-- footer section start -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>locations</h3>
+          <a href="">india</a>
+          <a href="">japan</a>
+          <a href="">russia</a>
+          <a href="">USA</a>
+          <a href="">france</a>
         </div>
-        <div class="col-right">
-          <h3>Safety</h3>
-          <div class="contant">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-              vel? Quaerat inventore necessitatibus dolor quisquam fuga sequi
-              pariatur expedita labore.
-            </p>
-          </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="">home</a>
+          <a href="">dishes</a>
+          <a href="">about</a>
+          <a href="">menu</a>
+          <a href="">review</a>
+          <a href="">order</a>
+        </div>
+
+        <div class="box">
+          <h3>contact in</h3>
+          <a href="">+123-456-789</a>
+          <a href="">+123-456-789</a>
+          <a href="">shaikhanas@gmail.com</a>
+          <a href="">test@gmail.com</a>
+          <a href="">address</a>
+        </div>
+
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="">facebook</a>
+          <a href="">twitter</a>
+          <a href="">instragram</a>
+          <a href="">linken</a>
         </div>
       </div>
+
+      <div class="credit">copptright @2021 <span>mr. web designer</span></div>
     </section>
 
-    <!-- mission section end -->
+    <!-- footer section end -->
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
 
     <!-- custom js file link -->
     <script src="js/script.js"></script>
