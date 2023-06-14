@@ -86,18 +86,71 @@ header .logo{
     font-weight: bolder;
 }
 
+header .navbar ul{
+    display: flex;
+    align-items: center;
+}
+header .navbar li{
+   list-style: none;
+   display: flex;
+   position: relative;
+}
+
 header .navbar a{
     font-size: 1.7rem;
     border-radius: .5rem;
-    padding: .5rem 1.5rem;
+    padding: 15px 30px;
     color: var(--light-color);
+    position: relative;
 }
 
-header .navbar a.active,
+header .navbar .dropdown{
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    top: 120%;
+    padding: 15px 30px;
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+header .navbar .dropdown-link:hover .dropdown {
+    top: 105%;
+    opacity: 1;
+    visibility: visible;
+  }
+  header .navbar .dropdown-link:hover a i {
+    transform: rotate(-180deg);
+  }
+
+/* header .navbar a.active,
 header .navbar a:hover{
     color: #fff;
-    background-color: var(--green);
+    height: 3px;
+    background-image: linear-gradient(to right,#2aba4d, #12a2af);
+} */
+
+header .navbar a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-image: linear-gradient(to right,#2aba4d, #12a2af);
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 25px;
+    transition: .5s;
+
 }
+    header .navbar a:hover::after{
+
+    width: 60%;
+    opacity: 1;
+    
+}
+
 
 header .icons a,
 header .icons i{
