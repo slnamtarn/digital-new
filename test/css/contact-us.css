@@ -31,7 +31,7 @@ body{
 }
 
 .contactUs .title h3{
-    color: #fff;
+    color: var(--black);
     font-weight: 500;
 }
 
