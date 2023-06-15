@@ -5,7 +5,6 @@
     --black: #192a56;
     --light-color: #666;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1) ;
-    /* --font-thai: 'Mali', cursive; */
 }
 
 hr {
@@ -20,15 +19,29 @@ hr {
    margin-left: 40rem;
 }
 
-h2, h4, p, span, b, li {
-    font-family: 'Krub', sans-serif;
+h2 {
+    font-size: 5.5rem;
+    color: var(--black);
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 2.5rem;
+    color: var(--green);
+    font-weight: 500;
+}
+
+p, span, b, ul, li {
+    font-size: 1.6rem;
+    color: var(--light-color);
+    line-height: 1.5;
+}
+
+li {
+    padding-left: 10px;
 }
 
 /* =========== header section ============= */
-@media screen and (max-width: 992px) {
-    
-}
-
 
 
 /* ============ hero section =============== */
@@ -57,18 +70,11 @@ h2, h4, p, span, b, li {
 }
 
 #hero .card .content h2 {
-    font-size: 5rem;
     text-align: center;
-    font-weight: 700;
-    color: var(--black);
 }
 
 #hero .card .content .paragraph p {
-    font-size: 1.70rem;
     padding: 30px 0;
-    letter-spacing: 2px;
-    font-weight: 300;
-    line-height: 1.5;
 }
 
 #hero .card .content .buttom {
@@ -123,39 +129,22 @@ h2, h4, p, span, b, li {
     margin-top: -5%;
 }
 
-#atmosphere h2 {
-    font-size: 5rem;
-    font-weight: 700;
-    color: var(--black);
-}
-
 #atmosphere .content {
     padding-top: 10px;
     padding-bottom: 50px;
 }
 
-#atmosphere .content p {
-    font-size: 1.70rem;
-    font-weight: 300;
-    line-height: 1.7;
-}
-
 /* ====== vision section ======= */
 
 #vision {
-    background-color: #eee;
+    background-color: white;
 }
 
 #vision h2 {
-    font-size: 7rem;
-    font-weight: 700;
     text-align: center;
-    color: var(--black);
 }
 
 #vision .body-text p{
-    font-size: 1.75rem;
-    font-weight: 400;
     text-align: center;
     padding-top: 10px;
 }
@@ -169,20 +158,19 @@ h2, h4, p, span, b, li {
 
 /* =========== mission section ============= */
 #mission {
-    background-color: #eee;
+    background-color: white;
     
 }
 
 #mission h2 {
-    font-size: 7rem;
     text-align: center;
-    color: var(--black);
 }
 
 #mission .body-text {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     margin: 0 10px;
+    gap: 20px;
 }
 
 #mission .body-text .card {
@@ -195,15 +183,14 @@ h2, h4, p, span, b, li {
 
 #mission .body-text .card p {
     padding: 10%;
-    font-size: 1.75rem;
-    font-weight: 300;
-    line-height: 1.75;
 }
 
 /* ======= safety section ======= */
+#safety {
+    background-color: white;
+}
+
 #safety h2 {
-    font-size: 7rem;
-    color: var(--black);
     text-align: center;
 }
 
@@ -223,15 +210,17 @@ h2, h4, p, span, b, li {
 	padding: 15px;
 }
 
+#safety .item .item-inner .content {
+    height: 200px;
+}
+
 #safety .content-item .item-inner {
-    border:1px solid #dddddd;
-	padding: 30px;
+    border: 1px solid #dddddd;
+    padding: 30px;
+    box-shadow: var(--box-shadow);
 }
 
 #safety .content-item .item-inner h4 {
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--green);
     position: relative;
 }
 
@@ -239,17 +228,21 @@ h2, h4, p, span, b, li {
     content:"";
     height: 5px;
     width: 100px;
-    background-color: var(--green);
     position: absolute;
     left: 0;
     bottom: -10px;
 }
 
 #safety .content-item .item-inner p {
-    color: var(--light-color);
-    font-size: 2rem;
     margin: 30px 30px;
 }
+
+#safety .content-item .item-inner .button {
+    display: flex;
+    justify-content: end;
+
+}
+
 
 #safety .content-item .item-inner .btn {
     font-size: 2rem;
@@ -257,10 +250,15 @@ h2, h4, p, span, b, li {
     border: 1px solid #555555;
     color: #555555;
     cursor: pointer;
+    margin-left: 60%;
 }
 
 #safety .content-item .read-more-cont {
     display: none;
+}
+
+#safety .content-item .read-more-cont b {
+    font-weight: 700;
 }
 
 .popup-box {
@@ -283,7 +281,7 @@ h2, h4, p, span, b, li {
 
 .popup-box .popup-content {
     background-color: #ffffff;
-    width: 600px;
+    width: 1000px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -297,8 +295,6 @@ h2, h4, p, span, b, li {
 
 .popup-box .popup-header h4{
     margin:0;
-	color: var(--green);
-	font-size: 20px;
 }
 
 .popup-box .popup-header .popup-close-icon{
@@ -321,8 +317,6 @@ h2, h4, p, span, b, li {
 }
 
 .popup-box .popup-body p{
-    font-size: 1.38rem;
-    color: #555555;
     margin: 0 0 15px;
 }
 

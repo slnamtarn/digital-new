@@ -29,6 +29,7 @@ const popupCloseBtn = popup.querySelector(".popup-close-btn");
 const popupCloseIcon = popup.querySelector(".popup-close-icon");
 
 contentItems.addEventListener("click", function (event) {
+  console.log(event.target.tagName.toLowerCase())
   if (event.target.tagName.toLowerCase() == "button") {
     const item =event.target.parentElement;
     const title = item.querySelector("h4").innerHTML;
@@ -36,6 +37,7 @@ contentItems.addEventListener("click", function (event) {
     popup.querySelector("h4").innerHTML = title;
     popup.querySelector(".popup-body").innerHTML = readMoreCont;
     popupBox();
+    
   }
 });
 
