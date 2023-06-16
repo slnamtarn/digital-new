@@ -1,105 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Complete Responsive Food Website Design Tutorial</title>
 
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
     <!-- font awesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/join-us.css">
 </head>
+
 <body>
-        <!-- header section start -->
-        <header>
-            <a href="#" class="logo">test</a>
+    <!-- header section start -->
+    <header>
+        <a href="#" class="logo">test</a>
 
-            <nav class="navbar">
-                <ul>
-                    <li><a class="active" href="index.html">home</a></li>
-                    <li><a href="#dished">About Us</a></li>
-                    <li><a href="" class="dropdown-link">Service & Solutions <i class="fa-solid fa-caret-down"></i></a>
-                        <ul class="dropdown">
-                            <li><a href="">ERP system</a></li>
-                            <li><a href="scada-new.html">Scada</a></li>
-                            <li><a href="">SI System</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#menu">Blogs</a></li>
-                    <li><a href="#review">Join Us</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                </ul>
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="index.html">home</a></li>
+                <li><a href="#dished">About Us</a></li>
+                <li><a href="" class="dropdown-link">Service & Solutions <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="">ERP system</a></li>
+                        <li><a href="scada-new.html">Scada</a></li>
+                        <li><a href="">SI System</a></li>
+                    </ul>
+                </li>
+                <li><a href="#menu">Blogs</a></li>
+                <li><a href="#review">Join Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
 
-            </nav>
+        </nav>
 
-            <div class="icons">
-                <i class="fas fa-bars" id="menu-bars"></i>
-                <i class="fab fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </header>
+    <!-- header section end -->
+
+    <!-- available position start -->
+
+    <section class="available" id="availiable">
+        <h3 class="topic"><span style="color: #27ae60;">Available &nbsp</span> Positions</h3>
+
+        <div class="row">
+            <div class="job-list-container">
+                <div class="row">
+                    <div class="jobs">
+                        <div class="job">
+                            <img src="image/dished-2.png" alt="">
+                            <h3 class="job-title">Electronic Engineer</h3>
+                            <div class="detail">Responsible for design, developing and maintaining software system</div>
+                            <!-- <div class="read-more-cont">
+                                <p>
+                                    นโยบายความเป็นส่วนตัวของข้อมูล (Privacy Policy)<br />
+                                    เว็บไซต์ของเรา digital.co.th
+                                    เคารพสิทธิความเป็นส่วนตัวของผู้ใช้ทุกคนที่เข้าเว็บไซต์ของเรา
+                                    จึงขอชี้แจงให้ท่านทราบเกี่ยวกับการใช้งานข้อมูลส่วนบุคคลของท่าน<br />
+                                    ประกาศนโยบายความเป็นส่วนตัวนี้ใช้สำหรับบุคคลดังต่อไปนี้
+                                </p>
+                            </div> -->
+
+                            <a href="" class="detail-btn">More Detail</a>
+                        </div>
+
+                        <div class="job">
+                            <img src="image/dished-2.png" alt="">
+                            <h3 class="job-title">Electronic Epngineer</h3>
+                            <div class="detail">Responsible for design, developing and maintaining software system</div>
+                            <!-- <div class="read-more-cont">
+                                <p>
+                                    <b>นโยบายความเป็นส่วนตัวของข้อมูล (Privacy Policy)</b><br />
+                                    เว็บไซต์ของเรา digital.co.th
+                                    เคารพสิทธิความเป็นส่วนตัวของผู้ใช้ทุกคนที่เข้าเว็บไซต์ของเรา
+                                    จึงขอชี้แจงให้ท่านทราบเกี่ยวกับการใช้งานข้อมูลส่วนบุคคลของท่าน<br />
+                                    ประกาศนโยบายความเป็นส่วนตัวนี้ใช้สำหรับบุคคลดังต่อไปนี้
+                                </p>
+                            </div> -->
+                            <a href="" class="detail-btn">More Detail</a>
+
+                        </div>
+
+                        <div class="job">
+                            <img src="image/dished-2.png" alt="">
+                            <h3 class="job-title">Electronic Engineer</h3>
+                            <div class="detail">Responsible for design, developing and maintaining software system</div>
+                            <!-- <div class="read-more-cont">
+                                <p>
+                                    <b>นโยบายความเป็นส่วนตัวของข้อมูล (Privacy Policy)</b><br />
+                                    เว็บไซต์ของเรา digital.co.th
+                                    เคารพสิทธิความเป็นส่วนตัวของผู้ใช้ทุกคนที่เข้าเว็บไซต์ของเรา
+                                    จึงขอชี้แจงให้ท่านทราบเกี่ยวกับการใช้งานข้อมูลส่วนบุคคลของท่าน<br />
+                                    ประกาศนโยบายความเป็นส่วนตัวนี้ใช้สำหรับบุคคลดังต่อไปนี้
+                                </p>
+                            </div> -->
+                            <a href="" class="detail-btn">More Detail</a>
+
+                        </div>
+
+                        <div class="job">
+                            <img src="image/dished-2.png" alt="">
+                            <h3 class="job-title">Electronic Engineer</h3>
+                            <div class="detail">Responsible for design, developing and maintaining software system</div>
+                            <!-- <div class="read-more-cont">
+                                <p>
+                                    <b>นโยบายความเป็นส่วนตัวของข้อมูล (Privacy Policy)</b><br />
+                                    เว็บไซต์ของเรา digital.co.th
+                                    เคารพสิทธิความเป็นส่วนตัวของผู้ใช้ทุกคนที่เข้าเว็บไซต์ของเรา
+                                    จึงขอชี้แจงให้ท่านทราบเกี่ยวกับการใช้งานข้อมูลส่วนบุคคลของท่าน<br />
+                                    ประกาศนโยบายความเป็นส่วนตัวนี้ใช้สำหรับบุคคลดังต่อไปนี้
+                                </p>
+                            </div> -->
+                            <a href="" class="detail-btn">More Detail</a>
+
+                        </div>
+
+                        <div class="job">
+                            <img src="image/dished-2.png" alt="">
+                            <h3 class="job-title">Electronic Engineer</h3>
+                            <div class="detail">Responsible for design, developing and maintaining software system</div>
+                            <!-- <div class="read-more-cont">
+                                <p>
+                                    <b>นโยบายความเป็นส่วนตัวของข้อมูล (Privacy Policy)</b><br />
+                                    เว็บไซต์ของเรา digital.co.th
+                                    เคารพสิทธิความเป็นส่วนตัวของผู้ใช้ทุกคนที่เข้าเว็บไซต์ของเรา
+                                    จึงขอชี้แจงให้ท่านทราบเกี่ยวกับการใช้งานข้อมูลส่วนบุคคลของท่าน<br />
+                                    ประกาศนโยบายความเป็นส่วนตัวนี้ใช้สำหรับบุคคลดังต่อไปนี้
+                                </p>
+                            </div> -->
+                            <a href="" class="detail-btn">More Detail</a>
+
+                        </div>
+
+                        <div class="job">
+                            <img src="image/dished-2.png" alt="">
+                            <h3 class="job-title">Electronic Engineer</h3>
+                            <div class="detail">Responsible for design, developing and maintaining software system</div>
+                            <!-- <div class="read-more-cont">
+                                <p>
+                                    <b>นโยบายความเป็นส่วนตัวของข้อมูล (Privacy Policy)</b><br />
+                                    เว็บไซต์ของเรา digital.co.th
+                                    เคารพสิทธิความเป็นส่วนตัวของผู้ใช้ทุกคนที่เข้าเว็บไซต์ของเรา
+                                    จึงขอชี้แจงให้ท่านทราบเกี่ยวกับการใช้งานข้อมูลส่วนบุคคลของท่าน<br />
+                                    ประกาศนโยบายความเป็นส่วนตัวนี้ใช้สำหรับบุคคลดังต่อไปนี้
+                                </p>
+                            </div> -->
+                            <a href="" class="detail-btn">More Detail</a>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </header>
-        <!-- header section end -->
 
-        
 
-        <!-- footer section start -->
-        <section class="footer">
-            <div class="box-container">
+        </div>
+    </section>
 
-                <div class="box">
-                    <h3>locations</h3>
-                    <a href="">india</a>
-                    <a href="">japan</a>
-                    <a href="">russia</a>
-                    <a href="">USA</a>
-                    <a href="">france</a>
-                </div>
+    <!-- read more popup box start -->
+    <!-- <div class="popup-box">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h4 class="title">Website</h4>
+                <span class="popup-close-icon">&times;</span>
+            </div>
+            <div class="popup-body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+                    odio.
+                </p>
+            </div>
+            <div class="popup-footer">
+                <div class="btn popup-close-btn">Close</div>
+            </div>
+        </div>
+    </div> -->
 
-                <div class="box">
-                    <h3>quick links</h3>
-                    <a href="">home</a>
-                    <a href="">dishes</a>
-                    <a href="">about</a>
-                    <a href="">menu</a>
-                    <a href="">review</a>
-                    <a href="">order</a>
-                </div>
+    <!-- read more popup box end -->
+    <!-- available position end -->
 
-                <div class="box">
-                    <h3>contact in</h3>
-                    <a href="">+123-456-789</a>
-                    <a href="">+123-456-789</a>
-                    <a href="">shaikhanas@gmail.com</a>
-                    <a href="">test@gmail.com</a>
-                    <a href="">address</a>
-                </div>
 
-                <div class="box">
-                    <h3>follow us</h3>
-                    <a href="">facebook</a>
-                    <a href="">twitter</a>
-                    <a href="">instragram</a>
-                    <a href="">linken</a>
-                </div>
-                
+
+    <!-- footer section start -->
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>locations</h3>
+                <a href="">india</a>
+                <a href="">japan</a>
+                <a href="">russia</a>
+                <a href="">USA</a>
+                <a href="">france</a>
             </div>
 
-            <div class="credit"> copptright @2021 <span>mr. web designer</span></div>
-        </section>
-        
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="">home</a>
+                <a href="">dishes</a>
+                <a href="">about</a>
+                <a href="">menu</a>
+                <a href="">review</a>
+                <a href="">order</a>
+            </div>
 
-        <!-- footer section end -->
+            <div class="box">
+                <h3>contact in</h3>
+                <a href="">+123-456-789</a>
+                <a href="">+123-456-789</a>
+                <a href="">shaikhanas@gmail.com</a>
+                <a href="">test@gmail.com</a>
+                <a href="">address</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="">facebook</a>
+                <a href="">twitter</a>
+                <a href="">instragram</a>
+                <a href="">linken</a>
+            </div>
+
+        </div>
+
+        <div class="credit"> copptright @2021 <span>mr. web designer</span></div>
+    </section>
+
+
+    <!-- footer section end -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <!-- custom js file link -->
     <script src="js/script.js"></script>
-    
+    <!-- <script src="js/read-more.js"></script> -->
+
 </body>
+
 </html>
