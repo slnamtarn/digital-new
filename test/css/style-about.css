@@ -210,7 +210,7 @@ li {
 }
 
 #safety .item .item-inner .content {
-    height: 200px;
+    height: 250px;
 }
 
 #safety .content-item .item-inner {
@@ -249,7 +249,7 @@ li {
     border: 1px solid #555555;
     color: #555555;
     cursor: pointer;
-    margin-left: 60%;
+    margin-left: 50%;
 }
 
 #safety .content-item .read-more-cont {
@@ -337,6 +337,17 @@ li {
 
 .popup-box .popup-footer .btn:focus {
     outline: none;
+}
+
+@media (max-width: 767px) {
+    #safety .content-item .item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .popup-box .popup-content {
+        width: calc(100% - 30px);
+    }
 }
 
 /* ======= footer section ====== */
