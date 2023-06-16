@@ -18,6 +18,7 @@ html{
     display: flex;
     justify-content: center;
 }
+
 .available{
     padding-top: 9rem;
 }
@@ -112,4 +113,61 @@ html{
         max-width: 400px;
         margin: 0 auto;
     }
+}
+
+/* ----- popup box ------ */
+.model-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    background: rgba(0,0,0,.3);
+    transform: scale(0);
+}
+
+.model-container .model {
+    height: 100%;
+    max-width: 100%;
+    margin: 0 10px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+}
+
+.model-container .model h3 {
+    color: #333;
+    font-size: 25px;
+}
+
+.model-container .model p {
+    color: #666;
+    margin: 20px 0;
+}
+
+.model-container .model button {
+    height: 35px;
+    width: 120px;
+    background: var(--green);
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+}
+
+.model-container .model button:hover {
+    opacity: .8;
+}
+
+.model-container .model .fa-times {
+    position: absolute;
+    top: 15px; right: 15px;
+    font-size: 25px;
+    cursor: pointer;
 }
