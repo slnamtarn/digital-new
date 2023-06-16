@@ -22,26 +22,36 @@
     <link rel="stylesheet" href="css/style-about.css" />
   </head>
   <body>
-    <header>
-      <a href="#" class="logo">test</a>
+<!-- header section start -->
+<header>
+  <a href="#" class="logo">test</a>
 
-      <nav class="navbar">
-        <a class="active" href="#hero">Home</a>
-        <a href="#content">vision&mission</a>
-        <a href="#vision">vision</a>
-        <a href="#mission">mission</a>
-        <a href="#safety">safety</a>
-      </nav>
+  <nav class="navbar">
+      <ul>
+          <li><a class="active" href="index.html">home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="" class="dropdown-link">Service & Solutions <i class="fa-solid fa-caret-down"></i></a>
+              <ul class="dropdown">
+                  <li><a href="">ERP system</a></li>
+                  <li><a href="scada-new.html">Scada</a></li>
+                  <li><a href="">SI System</a></li>
+              </ul>
+          </li>
+          <li><a href="blog.html">Blogs</a></li>
+          <li><a href="join-us.html">Join Us</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
 
-      <div class="icons">
-        <i class="fas fa-bars" id="menu-bars"></i>
-        <i class="fas fa-search" id="search-icon"></i>
-        <a href="" class="fas fa-heart"></a>
-        <a href="" class="fas fa-shopping-cart"></a>
-      </div>
-    </header>
-    <!-- header section end -->
+  </nav>
 
+  <div class="icons">
+      <i class="fas fa-bars" id="menu-bars"></i>
+      <i class="fab fa-facebook-f"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+  </div>
+</header>
+<!-- header section end -->
     <!-- hero section start -->
 
     <section class="hero" id="hero">
@@ -583,5 +593,6 @@
 
     <!-- custom js file link -->
     <script src="js/script.js"></script>
+    <script src="js/read-more.js"></script>
   </body>
 </html>
