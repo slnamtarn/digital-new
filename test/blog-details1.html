@@ -32,7 +32,7 @@
     <link href="assets/css/style.css" rel="stylesheet" />
     <script type="module" src="/testassets1/js/tamplate.js"></script>
   </head>
-  </head>
+
   <body>
     <!-- ======= Header ======= -->
     <header
@@ -43,7 +43,10 @@
     </header>
 
     <!-- End Header -->
-    <div class="aa" style="height: 6rem;background-color: rgb(255, 255, 255);"></div>
+    <div
+      class="aa"
+      style="height: 6rem; background-color: rgb(255, 255, 255)"
+    ></div>
     <div class="page-section pt-5">
       <div class="container">
         <nav aria-label="Breadcrumb">
@@ -61,7 +64,10 @@
             <div class="blog-single-wrap">
               <div class="header">
                 <div class="post-thumb">
-                  <img src="../assets1/img/blog/rpa-concept-with-blurry-hand-touching-screen.jpg" alt="" />
+                  <img
+                    src="../assets1/img/blog/rpa-concept-with-blurry-hand-touching-screen.jpg"
+                    alt=""
+                  />
                 </div>
                 <div class="meta-header">
                   <div class="post-author">
@@ -85,7 +91,10 @@
                   </div>
                 </div>
               </div>
-              <h1 class="post-title">What is SCADA (supervisory control and data acquisition) and how does it work?</h1>
+              <h1 class="post-title">
+                What is SCADA (supervisory control and data acquisition) and how
+                does it work?
+              </h1>
               <div class="post-meta">
                 <div class="post-date">
                   <span class="icon">
@@ -102,55 +111,144 @@
               </div>
               <div class="post-content">
                 <p>
-                  SCADA (supervisory control and data acquisition) is a category of software applications for controlling industrial processes, which is the gathering of data in real time from remote locations in order to control equipment and conditions. SCADA provides organizations with the tools needed to make and deploy data-driven decisions regarding their industrial processes.
+                  SCADA (supervisory control and data acquisition) is a category
+                  of software applications for controlling industrial processes,
+                  which is the gathering of data in real time from remote
+                  locations in order to control equipment and conditions. SCADA
+                  provides organizations with the tools needed to make and
+                  deploy data-driven decisions regarding their industrial
+                  processes.
                 </p>
-                <p>Sensors and actuators. A sensor is a feature of a device or system that detects inputs from industrial processes. An actuator is a feature of the device or system that controls the mechanism of the process. In simple terms, a sensor functions like a gauge or meter, which displays the status of a machine; an actuator acts like a switch, dial or control valve that can be used to control a device. Both sensors and actuators are controlled and monitored by SCADA field controllers.</p>
-                <p>SCADA systems include hardware and software components. The hardware gathers and feeds data into field controller systems, which forward the data to other systems that process and present it to a human-machine interface (HMI) in a timely manner. SCADA systems also record and log all events for reporting process status and issues. SCADA applications warn when conditions become hazardous by sounding alarms.</p>
-                <h3>Components of a SCADA system </h3>
-                <p>SCADA systems include components deployed in the field to gather real-time data, as well as related systems to enable data collection and enhance industrial automation. SCADA components include the following:</p>
+                <p>
+                  Sensors and actuators. A sensor is a feature of a device or
+                  system that detects inputs from industrial processes. An
+                  actuator is a feature of the device or system that controls
+                  the mechanism of the process. In simple terms, a sensor
+                  functions like a gauge or meter, which displays the status of
+                  a machine; an actuator acts like a switch, dial or control
+                  valve that can be used to control a device. Both sensors and
+                  actuators are controlled and monitored by SCADA field
+                  controllers.
+                </p>
+                <p>
+                  SCADA systems include hardware and software components. The
+                  hardware gathers and feeds data into field controller systems,
+                  which forward the data to other systems that process and
+                  present it to a human-machine interface (HMI) in a timely
+                  manner. SCADA systems also record and log all events for
+                  reporting process status and issues. SCADA applications warn
+                  when conditions become hazardous by sounding alarms.
+                </p>
+                <h3>Components of a SCADA system</h3>
+                <p>
+                  SCADA systems include components deployed in the field to
+                  gather real-time data, as well as related systems to enable
+                  data collection and enhance industrial automation. SCADA
+                  components include the following:
+                </p>
                 <li>
-                  SCADA field controllers. These interface directly with sensors and actuators. There are two categories of field controllers:
+                  SCADA field controllers. These interface directly with sensors
+                  and actuators. There are two categories of field controllers:
                 </li>
-                
+
                 <li>
-                  Keep all your data safe and in one place. Don’t keep hunting for data when you need it across spreadsheets and different computers. Manage everyone on the same page. All users get the same updated data.
+                  Keep all your data safe and in one place. Don’t keep hunting
+                  for data when you need it across spreadsheets and different
+                  computers. Manage everyone on the same page. All users get the
+                  same updated data.
                 </li>
-                <ul>1.Remote telemetry units, also called remote terminal units (RTUs), interface with sensors to collect telemetry data and forward it to a primary system for further action.</ul>
-                <ul>2.Programmable logic controllers (PLCs) interface with actuators to control industrial processes, usually based on current telemetry collected by RTUs and the standards set for the processes.</ul>
-                <li>SCADA supervisory computers. These control all SCADA processes and are used to gather data from field devices and to send commands to those devices to control industrial processes.</li>
+                <ul>
+                  1.Remote telemetry units, also called remote terminal units
+                  (RTUs), interface with sensors to collect telemetry data and
+                  forward it to a primary system for further action.
+                </ul>
+                <ul>
+                  2.Programmable logic controllers (PLCs) interface with
+                  actuators to control industrial processes, usually based on
+                  current telemetry collected by RTUs and the standards set for
+                  the processes.
+                </ul>
                 <li>
-                  HMI software. This provides a system that consolidates and presents data from SCADA field devices and enables operators to understand and, if needed, modify the status of SCADA-controlled processes.
+                  SCADA supervisory computers. These control all SCADA processes
+                  and are used to gather data from field devices and to send
+                  commands to those devices to control industrial processes.
                 </li>
                 <li>
-                  Communication infrastructure. This enables SCADA supervisory systems to communicate with field devices and field controllers. This infrastructure enables SCADA systems to collect data from field devices and to control those devices.
-                  SCADA is sometimes compared with the industrial internet of things (IIoT), and while there is considerable overlap, the two terms are different. SCADA vendors tend to provide more complete, monolithic systems with tight integration across levels and devices, while IIoT vendors are likely to provide greater interoperability and more options for deploying systems and devices across an organization.
+                  HMI software. This provides a system that consolidates and
+                  presents data from SCADA field devices and enables operators
+                  to understand and, if needed, modify the status of
+                  SCADA-controlled processes.
                 </li>
-                <br>
+                <li>
+                  Communication infrastructure. This enables SCADA supervisory
+                  systems to communicate with field devices and field
+                  controllers. This infrastructure enables SCADA systems to
+                  collect data from field devices and to control those devices.
+                  SCADA is sometimes compared with the industrial internet of
+                  things (IIoT), and while there is considerable overlap, the
+                  two terms are different. SCADA vendors tend to provide more
+                  complete, monolithic systems with tight integration across
+                  levels and devices, while IIoT vendors are likely to provide
+                  greater interoperability and more options for deploying
+                  systems and devices across an organization.
+                </li>
+                <br />
                 <h3>Features of SCADA systems</h3>
-                <p>Although SCADA systems may include special features for specific industries or applications, most systems support the following features:</p>
-                
+                <p>
+                  Although SCADA systems may include special features for
+                  specific industries or applications, most systems support the
+                  following features:
+                </p>
+
                 <blockquote class="quote">
-                  “People who achieve success are not afraid of change. They use their bravery to start and their determination to succeed in something new.”
+                  “People who achieve success are not afraid of change. They use
+                  their bravery to start and their determination to succeed in
+                  something new.”
                   <span class="author">― chlaoemphon</span>
                 </blockquote>
                 <h3>The Champion</h3>
                 <p>
-                  ERP means organization wide change and it does not happen without effort. Every change requires a champion and it is the duty of the champion to organize and energize the entire team towards implementation. The champion needs to be resilient incase something goes wrong .
+                  ERP means organization wide change and it does not happen
+                  without effort. Every change requires a champion and it is the
+                  duty of the champion to organize and energize the entire team
+                  towards implementation. The champion needs to be resilient
+                  incase something goes wrong .
                 </p>
-                <p>In many organizations we have seen, the champion is most often the owner or a senior manager. Occasionally, the champion is an outsider who is hired for a particular purpose.</p>
-              <p>In either case, you must identify your champion first.</p>
+                <p>
+                  In many organizations we have seen, the champion is most often
+                  the owner or a senior manager. Occasionally, the champion is
+                  an outsider who is hired for a particular purpose.
+                </p>
+                <p>In either case, you must identify your champion first.</p>
               </div>
             </div>
-            <div class="b" style="background-color: rgb(94, 10, 252);height: 5rem;width: 45rem;color: white;display: block;
-  padding: 16px 20px;border-radius: 8px;margin: -3rem 0 0 0 ;">
-            <blockquote class="quote" >
-                  “People who achieve success are not afraid of change. They use their bravery to start and their determination to succeed in something new.”
-                  <span class="author">― chlaoemphon</span>
-                </blockquote>
+            <div
+              class="b"
+              style="
+                background-color: rgb(94, 10, 252);
+                height: 5rem;
+                width: 45rem;
+                color: white;
+                display: block;
+                padding: 16px 20px;
+                border-radius: 8px;
+                margin: -3rem 0 0 0;
+              "
+            >
+              <blockquote class="quote">
+                “People who achieve success are not afraid of change. They use
+                their bravery to start and their determination to succeed in
+                something new.”
+                <span class="author">― chlaoemphon</span>
+              </blockquote>
             </div>
             <p></p>
             <h3>Data Management</h3>
-            <p>You can import, export bulk edit data from and to spreadsheet files (.csv) from the Data Import Export Tool. This tool will be very helpful initially to setup your data from other systems.</p>
+            <p>
+              You can import, export bulk edit data from and to spreadsheet
+              files (.csv) from the Data Import Export Tool. This tool will be
+              very helpful initially to setup your data from other systems.
+            </p>
 
             <div class="comment-form-wrap pt-5">
               <h2 class="mb-5">Leave a comment</h2>
@@ -212,16 +310,11 @@
                 <div class="divider"></div>
 
                 <ul class="categories">
-                  <li><a href="blog-details.html">Accounting
-</a></li>
-                  <li><a href="blog-details1.html">Buying
-</a></li>
-                  <li><a href="blog-details2.html">CRM
-</a></li>
-                  <li><a href="blog-details3.html">Selling
-</a></li>
-                  <li><a href="blog-details4.html">HR
-</a></li>
+                  <li><a href="blog-details.html">Accounting </a></li>
+                  <li><a href="blog-details1.html">Buying </a></li>
+                  <li><a href="blog-details2.html">CRM </a></li>
+                  <li><a href="blog-details3.html">Selling </a></li>
+                  <li><a href="blog-details4.html">HR </a></li>
                 </ul>
               </div>
 
@@ -232,7 +325,10 @@
 
                 <div class="blog-item">
                   <a class="post-thumb" href="">
-                    <img src="../assets1/img/blog/Untitled design (12).png" alt="" />
+                    <img
+                      src="../assets1/img/blog/Untitled design (12).png"
+                      alt=""
+                    />
                   </a>
                   <div class="content">
                     <h6 class="post-title">
@@ -312,7 +408,7 @@
       </div>
     </div>
     <!-- <div class="aa" style="height: 15rem; background-color: red"></div> -->
-     <my-footer></my-footer>
+    <my-footer></my-footer>
 
     <!-- <footer
       class="page-footer bg-image"
