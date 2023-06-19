@@ -22,36 +22,42 @@
     <link rel="stylesheet" href="css/style-about.css" />
   </head>
   <body>
-<!-- header section start -->
-<header>
-  <a href="#" class="logo">test</a>
+    <!-- header section start -->
+    <header>
+      <a href="#" class="logo">test</a>
 
-  <nav class="navbar">
-      <ul>
+      <input type="checkbox" style="display: none" id="menu-bar" />
+      <label for="menu-bar" style="display: none">Menu</label>
+
+      <nav class="navbar">
+        <ul>
           <li><a class="active" href="index.html">home</a></li>
           <li><a href="about.html">About Us</a></li>
-          <li><a href="" class="dropdown-link">Service & Solutions <i class="fa-solid fa-caret-down"></i></a>
-              <ul class="dropdown">
-                  <li><a href="">ERP system</a></li>
-                  <li><a href="scada-new.html">Scada</a></li>
-                  <li><a href="">SI System</a></li>
-              </ul>
+          <li>
+            <a href="" class="dropdown-link"
+              >Service & Solutions <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <ul class="dropdown">
+              <li><a href="">ERP system</a></li>
+              <li><a href="scada-new.html">Scada</a></li>
+              <li><a href="">SI System</a></li>
+            </ul>
           </li>
           <li><a href="blog.html">Blogs</a></li>
           <li><a href="join-us.html">Join Us</a></li>
           <li><a href="contact-us.html">Contact Us</a></li>
-      </ul>
+        </ul>
+      </nav>
 
-  </nav>
-
-  <div class="icons">
-      <i class="fas fa-bars" id="menu-bars"></i>
-      <i class="fab fa-facebook-f"></i>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-instagram"></i>
-  </div>
-</header>
-<!-- header section end -->
+      <div class="icons">
+        <input type="checkbox" id="menu-bar" />
+        <label for="menu-bar"><i class="fas fa-bars"></i></label>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </header>
+    <!-- header section end -->
     <!-- hero section start -->
 
     <section class="hero" id="hero">
@@ -375,8 +381,7 @@
                   </p>
                 </div>
 
-                  <button class="btn button" type="">Read More</button>
-                
+                <button class="btn button" type="">Read More</button>
               </div>
             </div>
 
@@ -513,7 +518,7 @@
                     (digital.co.th)
                   </p>
                 </div>
-                  <button class="btn" type="">Read More</button>
+                <button class="btn" type="">Read More</button>
               </div>
             </div>
           </div>
