@@ -84,15 +84,16 @@ html{
 }
 
 .job-list-container .detail-btn{
-   text-decoration: none;
-   font-size: 18px;
-   border: 1px solid var(--black);
-   color: #023047;
-   padding: 8px 16px;
-   border-radius: 8px;
-   text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    border: 1px solid var(--black);
+    color: #023047;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-align: center;
     margin-top: 20px;
     transition: all 400ms ease;
+    cursor: pointer;
 }
 
 .job-list-container .detail-btn:hover{
@@ -116,58 +117,73 @@ html{
 }
 
 /* ----- popup box ------ */
-.model-container {
-    display: flex;
-    align-items: center;
+
+.popup {
+    display: flex; 
+    align-items:center;
     justify-content: center;
-    min-height: 100%;
-    width: 100%;
     position: fixed;
-    top: 0; left: 0;
-    background: rgba(0,0,0,.3);
-    transform: scale(0);
-}
-
-.model-container .model {
+    width: 100%;
     height: 100%;
-    max-width: 100%;
-    margin: 0 10px;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index:500;
+    visibility: hidden;
+    /* overflow: hidden; */
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.popup-inner {
     position: relative;
+    width: 1000px;
+    background-color: white;
+    transform: translate(-50%,-50%);
+    transition: 1s ease-in-out;
+
 }
 
-.model-container .model h3 {
-    color: #333;
-    font-size: 25px;
+.popup-content .popup-header {
+    padding: 20px 20px 30px 30px;
+    border-bottom: 2px solid #dddddd;
 }
 
-.model-container .model p {
-    color: #666;
-    margin: 20px 0;
+.popup:target{
+    visibility: visible;
+    opacity: 1;
 }
-
-.model-container .model button {
-    height: 35px;
-    width: 120px;
-    background: var(--green);
-    color: #fff;
-    outline: none;
-    border: none;
-    border-radius: 50px;
-    font-size: 17px;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+.popup:target .popup-inner{
+    bottom: 0;
+    right: 0;
+    transform: rotate(0);
 }
-
-.model-container .model button:hover {
-    opacity: .8;
-}
-
-.model-container .model .fa-times {
+.popup-close{
     position: absolute;
-    top: 15px; right: 15px;
-    font-size: 25px;
+    right: 20px; top: 5px;
+    width: 3rem;
+    height: 3rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    border-radius: 100%;
+    z-index: 4;
+    line-height: 3rem;
+    text-align: center;
     cursor: pointer;
+    text-decoration: none;
+}
+.popup-close i {
+    color: rgb(163, 18, 18);
+    font-size: 3em;
+}
+
+
+@media screen and (max-width:800px){
+    .popup-text{
+        padding: 0;
+        overflow: hidden;
+    }
+    .popup-text h1 {
+        font-size: 1.2em;
+    }
 }
