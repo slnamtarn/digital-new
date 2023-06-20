@@ -1,0 +1,191 @@
+* {
+  font-family: "Nunito", sans-serif;
+  font-size: calc(60% + 0.8vmin);
+}
+.erp {
+  /* background-color: blue; */
+}
+.erp .erp1 {
+  background: url("../image/Copy of Red White Attractive 10 Ways To Earn Money Youtube Thumbnail (8).png");
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 700px auto;
+  padding: 40px;
+}
+.erp .erp2 {
+  /* background-color: rgb(255, 94, 0); */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+  gap: 4rem;
+}
+.erp .erp3 {
+  /* background-color: rgb(255, 0, 179); */
+}
+.erp .erp4 {
+  /* background-color: rgb(255, 0, 0); */
+  display: flex;
+  justify-content: center;
+}
+/* ======================================= 2 */
+.erp .erp1 .erp11 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.erp .erp2 .erp21 {
+  /* background-color: blue; */
+  padding: 20px;
+}
+.erp .erp2 .erp22 {
+  /* background-color: rgb(10, 126, 45); */
+  display: flex;
+  justify-content: center;
+}
+.erp .erp3 .erp31 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 30px;
+  gap: 2rem;
+}
+.erp .erp3 .erp35 {
+  padding: 40px;
+}
+.erp .erp4 .erp41 {
+  /* background-color: #1f0286; */
+}
+/* ========================================== 3*/
+.erp .erp1 .erp11 h1 {
+  font-size: 45px;
+  color: aliceblue;
+}
+.erp .erp1 .erp11 p {
+  font-size: 16px;
+  width: 50vw;
+  color: aliceblue;
+}
+.erp .erp1 .erp11 img {
+  width: 30vw;
+
+  margin: 5rem 0 0 2rem;
+}
+.erp .erp1 .erp11 .erp7 {
+  width: 10rem;
+  height: 3rem;
+  font-size: 16px;
+  margin: 3rem 0 0 0;
+  background-color: rgb(20, 151, 8);
+  color: #fff;
+}
+.erp .erp1 .erp11 .erp7:hover {
+  background-color: beige;
+  color: black;
+}
+.erp .erp2 .erp21 h2 {
+  font-size: 36px;
+  margin: 5rem 0 1rem 0;
+  opacity: 0.75;
+}
+.erp .erp2 .erp21 p {
+  font-size: 18px;
+  opacity: 0.75;
+}
+.erp .erp2 .erp21 .erp8 {
+  width: 10rem;
+  height: 3rem;
+  font-size: 16px;
+  margin: 3rem 0 0 0;
+  background-color: rgb(20, 151, 8);
+  color: #fff;
+}
+.erp .erp2 .erp21 .erp8:hover {
+  background-color: beige;
+  color: black;
+}
+.erp .erp3 .erp31 ul {
+  /* background-color: blue; */
+  height: 25rem;
+}
+.erp .erp3 .erp35 h2 {
+  font-size: 36px;
+}
+.erp .erp3 .erp35 p {
+  font-size: 16px;
+}
+.erp .erp3 .erp31 ul img {
+  width: 7rem;
+  height: 7rem;
+}
+.erp .erp3 .erp31 ul h3 {
+  font-size: 24px;
+  margin: 1rem 0 0 0;
+}
+.erp .erp3 .erp31 ul p {
+  font-size: 14px;
+  margin: 1rem 0 0 0;
+}
+.erp .erp3 .erp31 ul .erp9 {
+  width: 10rem;
+  height: 3rem;
+  font-size: 12px;
+  margin: 2rem 0 0 0;
+  background-color: rgb(20, 151, 8);
+  color: #fff;
+}
+.erp .erp3 .erp31 ul .erp9:hover {
+  background-color: #1f0286;
+  color: rgb(255, 255, 255);
+}
+.erp .erp4 .erp41 .erp42 {
+  display: grid;
+  text-align: center;
+  padding: 30px;
+}
+.erp .erp4 .erp41 .erp42 h3 {
+  font-size: 36px;
+}
+.erp .erp4 .erp41 .erp42 p {
+  font-size: 20px;
+}
+.erp .erp4 .erp41 .erp43 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  margin: 4rem 0 0 0;
+}
+.erp .erp4 .erp41 .erp43 img {
+  width: 15rem;
+  margin: 0 0 5rem 0;
+}
+/* ===============================================4 */
+@media screen and (max-width: 950px) {
+  .erp .erp1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 950px) {
+  .erp .erp2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 950px) {
+  .erp .erp3 .erp31 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 850px) {
+  .erp .erp3 .erp31 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 550px) {
+  .erp .erp3 .erp31 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 750px) {
+  .erp .erp4 .erp41 .erp43 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
