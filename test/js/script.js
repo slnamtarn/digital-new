@@ -49,7 +49,7 @@ window.onscroll = () =>{
 
 
 
-var swiper = new Swiper(".home-slider", {
+var swiper = new Swiper (".home-slider", {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
