@@ -136,7 +136,7 @@ html{
 
 .popup-1 .popup-header {
     padding: 15px 40px 15px 15px;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid var(--light-color);
 }
 
 .popup-1 .popup-header h2 {
@@ -199,7 +199,9 @@ html{
 /* ------------- Responsive ------------- */
 
 @media (max-width: 940px) {
-
+    .available .topic {
+        flex-wrap: wrap;
+    }
 
     .job-list-container .jobs{
         grid-template-columns: 1fr 1fr;

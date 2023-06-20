@@ -7,8 +7,9 @@ const popupCloseIcon = popup.querySelector(".popup-close-btn");
 jobList.addEventListener("click", function (event) {
 //   console.log(event.target.tagName.toLowerCase())
   if (event.target.tagName.toLowerCase() == "button") {
-    const title = document.querySelector(".job-title").innerHTML;
-    const readMoreCont = document.querySelector(".read-more-cont").innerHTML;
+    const item = event.target.parentElement;
+    const title = item.querySelector(".job-title").innerHTML;
+    const readMoreCont = item.querySelector(".read-more-cont").innerHTML;
     popup.querySelector(".popup-header h2").innerHTML = title;
     popup.querySelector(".popup-detail").innerHTML = readMoreCont;
     popupBox();
