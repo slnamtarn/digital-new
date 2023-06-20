@@ -259,8 +259,6 @@ header .icons #menu-bars{
     font-size: 2.5rem;
 }
 
-
-
 .about .row{
     display: flex;
     flex-wrap: wrap;
@@ -378,6 +376,8 @@ header .icons #menu-bars{
     font-size: 2.5rem;
 }
 
+/* ====== footer  section ======= */
+
 .footer{
     background-color: #eee;
 }
@@ -417,6 +417,60 @@ header .icons #menu-bars{
 
 .footer .credit span{
     color: var(--green);
+}
+
+/* ----- aomam code ------ */
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width:1000px) {
+    
+header {
+    padding: 20px;
+}
+
+header label {
+    display: initial;
+}
+
+header .navbar {
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background: #fff;
+    border-top: 1px solid rgba(0,0,0,.1);
+    display: none;
+}
+
+header .navbar ul li {
+    width: 100%;
+}
+
+header .navbar ul li ul {
+    position: relative;
+    width: 100%;
+}
+
+header .navbar ul li ul li {
+    background: #eee;
+}
+
+header .navbar ul li ul li ul {
+    width: 100%;
+    left: 0;
+}
+
+#menu-bar:checked ~ .navbar {
+    display: initial;
+}
+    
 }
 
 
@@ -572,7 +626,7 @@ header .icons #menu-bars{
 
 @media (max-width:768px){
 
-    header .icons #menu-bars{
+    /* header .icons #menu-bars{
         display: inline-block;
     }
 
@@ -601,7 +655,7 @@ header .icons #menu-bars{
         margin: 1rem;
         font-size: 2rem;
         background: #eee;
-    }
+    } */
    
     .home .home-slider .slide .content h3{
         color: var(--black);
