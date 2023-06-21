@@ -3,16 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Digital access</title>
 
-    <title>Rapid Bootstrap Template - Index</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
 
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/erp.css" />
+    <!-- font awesome cdn link -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -20,6 +18,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/erp.css" />
     <link rel="stylesheet" href="/lib/w3.css" />
 
     <!-- Google Fonts -->
@@ -36,39 +37,46 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   </head>
+
   <body>
     <!-- ======= Header ======= -->
     <!-- header section start -->
     <header>
-      <a href="#" class="logo">test</a>
+      <a href="index.html" class="logo">test</a>
+
+
+      <input type="checkbox" style="display: none;" id="menu-bar">
+      <label for="menu-bar" style="display: none;">Menu</label>
+
 
       <nav class="navbar">
-        <ul>
-          <li><a class="active" href="index.html">home</a></li>
-          <li><a href="#dished">About Us</a></li>
-          <li>
-            <a href="" class="dropdown-link"
-              >Service & Solutions <i class="fa-solid fa-caret-down"></i
-            ></a>
-            <ul class="dropdown">
-              <li><a href="">ERP system</a></li>
-              <li><a href="">Scada</a></li>
-              <li><a href="">SI System</a></li>
-            </ul>
-          </li>
-          <li><a href="#menu">Blogs</a></li>
-          <li><a href="#review">Join Us</a></li>
-          <li><a href="#order">Contact Us</a></li>
-        </ul>
+          <ul>
+              <li><a class="active" href="index.html">home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="" class="dropdown-link">Service & Solutions<i class="fa-solid fa-caret-down"></i></a>
+                  <ul class="dropdown">
+                      <li><a href="erp.html">ERP system</a></li>
+                      <li><a href="scada-new.html">Scada</a></li>
+                      <li><a href="">SI System</a></li>
+                  </ul>
+              </li>
+              <li><a href="blog.html">Blogs</a></li>
+              <li><a href="join-us.html">Join Us</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+          </ul>
+
       </nav>
 
       <div class="icons">
-        <i class="fas fa-bars" id="menu-bars"></i>
-        <i class="fab fa-facebook-f"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
+          <input type="checkbox" id="menu-bar">
+          <label for="menu-bar"><i class="fas fa-bars"></i></label>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          
       </div>
-    </header>
+  </header>
+
     <!-- header section end -->
     <!-- End Header -->
     <!-- ============================================================================================= -->
