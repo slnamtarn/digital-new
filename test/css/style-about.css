@@ -28,13 +28,9 @@ h4 {
 }
 
 p, span, b, ul, li {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     color: var(--light-color);
     line-height: 1.5;
-}
-
-li {
-    padding-left: 10px;
 }
 
 /* =========== header section ============= */
@@ -64,6 +60,7 @@ li {
 }
 
 #hero .card .content .paragraph p {
+    
     padding: 30px 0;
 }
 
@@ -280,7 +277,7 @@ li {
 
 .popup-box .popup-content {
     background-color: #ffffff;
-    width: 1000px;
+    width: calc(100% - 100px);
     position: absolute;
     left: 50%;
     top: 50%;
@@ -310,7 +307,7 @@ li {
 }
 
 .popup-box .popup-body {
-    padding: 15px;
+    padding: 10px 30px;
     max-height: 300px;
     overflow-y: auto;
 }
@@ -345,9 +342,6 @@ li {
         max-width: 100%;
     }
 
-    .popup-box .popup-content {
-        width: calc(100% - 30px);
-    }
 }
 
 /* ======= footer section ====== */
