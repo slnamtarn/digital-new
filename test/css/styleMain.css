@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+:root{
+    --bg: #fff;
+    --bgE: #eee;
+    --green: #27ae60;
+    --black: #192a56;
+    --light-color: #666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1) ;
+    /* ------- responsive ----- */
+    --sm: 640px;
+    --md: 768px;
+    --lg: 1024px;
+    --xl: 1280px;
+    --2xl: 1536px;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+section:nth-child(odd) {
+    background: var(--bgE);
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.75rem;
+    color: #fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor:  pointer;
+    padding: .8rem 3rem;
+    width: 15rem;
+    text-align: center;
+}
+
+.btn:hover {
+    background: var(--green);
+    letter-spacing: .1rem;
+}
+
+h1, h2 {
+    font-size: 5rem;
+    color: var(--black);
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 3.5rem;
+    color: var(--green);
+    font-weight: 600;
+}
+
+p, span, b, ul, li {
+    font-size: 1.75rem;
+    color: var(--light-color);
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+/* ------- header section -------- */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    font-weight: bolder;
+    font-size: 3.5rem;
+    color: var(--green);
+}
+
+header .navbar ul{
+    list-style: none;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a{
+    font-size: 2rem;
+    padding: 20px;
+    color: var(--light-color);
+    display: block;
+}
+
+header .navbar ul li a:hover{
+    font-size: 2rem;
+    padding: 20px;
+    color:var(--green);
+    display: block;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 220px;
+    background: var(--bg);
+    display: none;
+}
+
+header .navbar ul li ul li{
+    width:100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+}
+
+header .navbar ul li:focus-within > ul{
+    display: initial;
+}
+
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+header .icons a,
+header .icons i{
+    cursor: pointer;
+    margin-left: 0.5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icons a:hover,
+header .icons i:hover{
+    color: #fff;
+    background: var(--green);
+    transform: rotate(360deg);
+
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+/* ====== footer  section ======= */
+
+.footer{
+    background-color: var(--bgE);
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box{
+    padding: .5rem 0;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.footer .box-container .box a{
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.75rem;
+    color: var(--light-color);
+}
+
+.footer .box-container .box a:hover{
+    color: var(--green);
+    text-decoration: underline;
+}
+
+.footer .credit{
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    font-size: 1.75rem;
+    color: var(--black);
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+.footer .credit span{
+    color: var(--green);
+}
+
+/* -------------- @media ------------ */
+@media screen and (max-width: 1024px) {
+    
+    header label {
+        display: initial;
+    }
+    
+    header .navbar {
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: var(--bg);
+        border-top: 1px solid rgba(0,0,0,.1);
+        display: none;
+    }
+    
+    header .navbar ul li {
+        width: 100%;
+    }
+    
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+    
+    header .navbar ul li ul li {
+        background: #eee;
+    }
+    
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left: 0;
+    }
+    
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+    }
+
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding:1rem 2rem; 
+    }
+        
+}
+
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 50%;
+    }
+}
