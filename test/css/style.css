@@ -36,6 +36,7 @@
 .home .home-slider .slide .content span{
     color: var(--green);
     font-size: 2.5rem;
+    font-weight: 600;
 }
 
 .home .home-slider .slide .content h3{

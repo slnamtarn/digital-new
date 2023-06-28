@@ -1,0 +1,399 @@
+* {
+  /* font-family: "Sarabun", sans-serif; */
+  /* font-size: calc(60% + 0.8vmin); */
+}
+.part1 {
+  background: url("../image/Copy of Red White Attractive 10 Ways To Earn Money Youtube Thumbnail (8).png");
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+.part1 .subsection1 {
+  margin: 20vh 0 0 0;
+}
+.part1 .subsection1 h1 {
+  font-size: 65px;
+  color: aliceblue;
+  font-weight: 510;
+}
+.part1 .subsection1 img {
+  width: 120vh;
+  height: 60vh;
+  margin: 3vh 0 0 0;
+}
+/* =========================================== */
+.part2 {
+  background-color: rgb(255, 255, 255);
+}
+.part2 .subsection2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+.part2 .subsection2 ul {
+  padding: 30px;
+  width: 50%;
+}
+.part2 .subsection2 h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+.part2 .subsection2 p {
+  font-size: 23px;
+  margin: 2rem 0 0 0;
+}
+
+.part2 .subsection2 img {
+  width: 60vh;
+  height: 60vh;
+}
+.part2 .subsection2 ul .button1 {
+  display: inline-block;
+  font-size: 1.75rem;
+  color: #fff;
+  width: 15rem;
+  background: var(--black);
+  border-radius: .5rem;
+  padding: .8rem 3rem;
+  cursor:  pointer;
+  margin: 20px 0 0 60%;
+}
+.part2 .subsection2 ul .button1:hover {
+  background: var(--green);
+  letter-spacing: .1rem;
+}
+/* ===================================== */
+.part3 {
+  background-color: rgb(178, 178, 182);
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  padding: 20px;
+}
+.part3 .subsection2 .subsection3 {
+  text-align: center;
+}
+.part3 .subsection2 .subsection3 h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.part3 .subsection2 .subsection4 {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 0 0;
+}
+.part3 .subsection2 .subsection4 ul {
+  background-color: rgb(255, 255, 255);
+  width: 25rem;
+  height: 30rem;
+  margin: 0 1rem 0 0;
+  padding: 20px;
+  border-radius: 2rem;
+  box-shadow: #1b1818, 50%, 20%, 10%;
+}
+.part3 .subsection2 .subsection4 ul:hover {
+  background-color: chartreuse;
+  color: #020258;
+}
+.part3 .subsection2 .subsection4 ul h3 {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 0 2rem 0;
+}
+.part3 .subsection2 .subsection4 ul li {
+  font-size: 15px;
+  font-weight: 400;
+}
+/* ================================= */
+.ggg {
+  font-family: "Sarabun", sans-serif;
+  overflow: hidden;
+  min-height: 325px;
+  padding: 40px;
+}
+.container {
+  margin: 0 auto;
+}
+.ggg img {
+  width: 100%;
+}
+
+/*Menu*/
+.ggg ul.tabs {
+  float: left;
+  clear: both;
+  width: 100%;
+  list-style: none;
+  border-bottom: 2px solid #00aeef;
+  position: relative;
+  font-size: 1.061em;
+  padding: 0;
+}
+.ggg ul.tabs li {
+  float: left;
+}
+.ggg ul.tabs li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #666;
+  padding: 12px 20px;
+  min-width: 85px;
+  font-weight: normal;
+}
+.ggg ul.tabs li.active a {
+  color: #00aeef;
+}
+.ggg .tabsContainer {
+  float: left;
+  clear: both;
+  width: 100%;
+  overflow: hidden;
+  *position: relative;
+}
+.ggg .tabWrapper {
+  position: relative;
+  font-size: 0rem;
+  letter-spacing: -0.31em;
+  word-spacing: -0.43em;
+  white-space: nowrap;
+  *width: 300%;
+}
+.ggg .tabContent {
+  background-color: #d9dadb;
+  min-height: 500px;
+  text-align: left;
+  width: 100%;
+  padding: 0;
+  position: relative;
+
+  /* -webkit-box-shadow: inset 0px 0px 19px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 0px 19px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 0px 19px 0px rgba(0, 0, 0, 0.75); */
+}
+.ggg .tabWrapper > * {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-size: 1rem;
+  letter-spacing: normal;
+  vertical-align: top;
+  word-spacing: normal;
+  white-space: normal;
+  *width: 800px;
+}
+.ggg #magic-line {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100px;
+  height: 4px;
+  background: #00aeef;
+}
+/*Clear Fix*/
+.ggg .tabs:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+.ggg *:first-child + html .tabs {
+  zoom: 1;
+}
+/* ==================================== */
+.part5 {
+  /* background-color: #f07b7b; */
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.part5 .contact2 {
+  margin: 6rem 0 0 0;
+  width: 50%;
+}
+.part5 .contact2 h1 {
+  font-size: 36px;
+}
+.part5 .contact2 p {
+  font-size: 20px;
+  margin: 2rem 0 0 0;
+}
+/* ======================================= */
+@media screen and (max-width: 1400px) {
+  .part1 .subsection1 h1 {
+    font-size: 7.5vh;
+  }
+  .part2 .subsection2 p {
+    font-size: 18px;
+  }
+  .part2 .subsection2 img {
+    width: 60%;
+  }
+  .part3 {
+    background-color: rgb(234, 234, 241);
+    height: 120vh;
+  }
+  .part3 .subsection2 .subsection4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 20px;
+  }
+  
+  .part5 .contact2 h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .part2 .subsection2 h1 {
+    font-size: 30px;
+    margin: -1rem 0 0 0;
+  }
+  .part2 .subsection2 p {
+    font-size: 16px;
+  }
+  .part2 .subsection2 img {
+    width: 50%;
+  }
+  
+}
+
+@media screen and (max-width: 900px) {
+  .part1 {
+    height: 80vh;
+  }
+  .part1 .subsection1 h1 {
+    font-size: 4vh;
+  }
+  .part1 .subsection1 img {
+    width: 80vh;
+    height: 40vh;
+  }
+  .part2 .subsection2 h1 {
+    font-size: 26px;
+    /* margin: -1rem 0 0 0; */
+  }
+  .part2 .subsection2 p {
+    font-size: 14px;
+  }
+  .part2 .subsection2 img {
+    width: 25vh;
+    height: 25vh;
+  }
+  .part3 .subsection2 .subsection4 ul li {
+    font-size: 12px;
+  }
+  .part3 {
+    height: 50vh;
+  }
+  .ggg img {
+    height: 35vh;
+  }
+}
+@media screen and (max-width: 850px) {
+  .part1 {
+    height: 80vh;
+  }
+  .part1 .subsection1 h1 {
+    font-size: 4vh;
+    margin: 3rem 0 0 0;
+  }
+  .part1 .subsection1 img {
+    width: 70vh;
+    height: 35vh;
+  }
+  .part2 .subsection2 h1 {
+    font-size: 23px;
+    /* margin: -1rem 0 0 0; */
+  }
+  .part2 .subsection2 p {
+    font-size: 12px;
+  }
+  .part2 .subsection2 img {
+    width: 60vh;
+    height: 60vh;
+    margin: 3rem 0 0 -2rem;
+  }
+  .part3 {
+    background-color: rgb(234, 234, 241);
+    height: 160vh;
+  }
+  .ggg img {
+    height: 110vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .part1 {
+    height: 60vh;
+  }
+  .part1 .subsection1 h1 {
+    font-size: 3vh;
+    margin: -2rem 0 0 0;
+  }
+  .part1 .subsection1 img {
+    width: 60vh;
+    height: 30vh;
+  }
+  .part2 .subsection2 h1 {
+    font-size: 23px;
+    /* margin: -1rem 0 0 0; */
+  }
+  .part2 .subsection2 p {
+    font-size: 12px;
+  }
+  .part2 .subsection2 img {
+    width: 27vh;
+    height: 27vh;
+    margin: 2rem 0 0 0;
+  }
+  .part3 {
+    background-color: rgb(234, 234, 241);
+    height: 70vh;
+  }
+  .ggg img {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  .part2 .subsection2 {
+    display: grid;
+    grid-template-columns: 1, 1fr;
+  }
+  .part2 .subsection2 ul {
+    padding: 0;
+    width: 90%;
+  }
+  .part2 .subsection2 h1 {
+    font-size: 23px;
+    /* margin: -1rem 0 0 0; */
+  }
+  .part2 .subsection2 p {
+    font-size: 12px;
+  }
+  .part2 .subsection2 img {
+    width: 40vh;
+    height: 40vh;
+    margin: 3rem 0 0 -2rem;
+  }
+  .part3 {
+    height: 170vh;
+  }
+  .part3 .subsection2 .subsection4 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .part3 .subsection2 .subsection3 h1 {
+    font-size: 20px;
+  }
+  .ggg img {
+    height: 40vh;
+  }
+  .part5 .contact2 h1 {
+    font-size: 16px;
+  }
+}

@@ -60,7 +60,12 @@ section:nth-child(odd) {
     letter-spacing: .1rem;
 }
 
-h1, h2 {
+h1 {
+    font-size: 6.5rem;
+    font-weight: 700;
+}
+
+h2 {
     font-size: 5rem;
     color: var(--black);
     font-weight: 700;
