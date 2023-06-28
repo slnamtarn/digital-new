@@ -45,13 +45,12 @@ section:nth-child(odd) {
 .btn {
     margin-top: 1rem;
     display: inline-block;
-    font-size: 1.75rem;
+    font-size: 2rem;
     color: #fff;
     background: var(--black);
     border-radius: .5rem;
     cursor:  pointer;
     padding: .8rem 3rem;
-    width: 15rem;
     text-align: center;
 }
 
@@ -66,19 +65,24 @@ h1 {
 }
 
 h2 {
-    font-size: 5rem;
+    font-size: 3.5rem;
     color: var(--black);
     font-weight: 700;
 }
 
+h3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
 h4 {
-    font-size: 3.5rem;
+    font-size: 2rem;
     color: var(--green);
     font-weight: 600;
 }
 
 p, span, b, ul, li {
-    font-size: 1.75rem;
+    font-size: 2rem;
     color: var(--light-color);
     line-height: 1.5;
     font-weight: 300;
@@ -197,10 +201,16 @@ header label {
 .footer{
     background-color: var(--bgE);
 }
+
 .footer .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 1.5rem;
+}
+
+.footer .box-container h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 .footer .box-container .box{

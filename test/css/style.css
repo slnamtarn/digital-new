@@ -1,16 +1,18 @@
 .sub-heading{
     text-align: center;
     color: var(--green);
-    font-size: 2rem;
+    font-size: 3rem;
     padding-top: 1rem;
+    font-weight: 700;
 }
 
 .heading{
     text-align: center;
     color: var(--black);
-    font-size: 3rem;
+    font-size: 3.5rem;
     padding-bottom: 2rem;
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .home .home-slider .slide{
@@ -35,8 +37,8 @@
 
 .home .home-slider .slide .content span{
     color: var(--green);
-    font-size: 2.5rem;
-    font-weight: 600;
+    font-size: 3rem;
+    font-weight: 700;
 }
 
 .home .home-slider .slide .content h3{
@@ -85,10 +87,17 @@
     border-radius: .5rem;
     border: .1rem solid rgba(0,0,0,.2);
     box-shadow: var(--box-shadow);
-
     overflow: hidden;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.dished .box-container .box a {
+    width: 22rem;
+    margin: 0 10px 0 10px;
+} 
 
 .dished .box-container .box img{
     margin: 1rem 0;
@@ -133,15 +142,16 @@
 }
 
 .about .row img {
-    width: 80px;
+    width: 90px;
     border-radius: 50px;
     padding: 10px;
     border: 2px solid var(--black);
 }
 
 .about .divider {
-    border: 1px solid var(--green);
-    height: 30rem;
+    border: 2px solid  rgba(0,0,0,.2);
+    height: 40rem;
+    box-shadow: var(--box-shadow);
 }
 
 .menu .box-container{
@@ -214,9 +224,10 @@
 .blog-section .title h3{
     text-align: center;
     color: var(--black);
-    font-size: 3rem;
+    font-size: 3.5rem;
     padding-bottom: 2rem;
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .blog-section .title p{
@@ -248,7 +259,8 @@
 
 .content h4{
     color: var(--black);
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 .card .posted-date{
@@ -267,9 +279,10 @@
 .client .slider-area h3{
     text-align: center;
     color: var(--black);
-    font-size: 3rem;
+    font-size: 3.5rem;
     padding-bottom: 2rem;
-    text-transform: upperca
+    text-transform: uppercase;
+    font-weight: 700;
 
 }
 .client{ 
@@ -317,6 +330,16 @@
     }
 }
 
+@media (max-width: 412px) {
+    .about .row .chooseUs {
+        flex-wrap: wrap;
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+}
+
 @media screen and (max-width: 768px) {
     .client .slider-area h3{
         font-size: 5rem;
@@ -342,9 +365,9 @@
 }
 
 @media (max-width: 1024px) {
-    .dished .box-container .box img{
-        height: auto;
-        width: 60%;
+
+    .dished .box-container .box a {
+        width: 15rem;
     }
 
     .cards{
