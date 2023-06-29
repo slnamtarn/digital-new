@@ -22,7 +22,7 @@ hr {
 
 /* ============ hero section =============== */
 #hero .card {
-    margin-top: 10vh;
+    margin-top: 10%;
     display: grid;
     grid-template-columns: repeat(2, 40% 60%);
 }
