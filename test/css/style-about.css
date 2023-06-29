@@ -9,7 +9,7 @@ hr {
 
 /* ============ hero section =============== */
 #hero .card {
-    margin-top: 13vh;
+    margin-top: 10vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -23,41 +23,29 @@ hr {
 }
 
 #hero .card .content {
-    padding: 5%;
+    padding: 0 7% 0 7%;
 }
 
 #hero .card .content h2 {
     text-align: center;
+    padding-bottom: 10px;
 }
 
-#hero .card .content .paragraph p {
-    
-    padding: 30px 0;
-}
-
-#hero .card .content .buttom {
+#hero .card .content .paragraph {
     display: flex;
-    justify-content: end;
+    flex-direction: column;
 }
 
-#hero .card .content button {
-    width: 100px;
-    height: 50px;
-    color: var(--black);
-    text-transform: uppercase;
-    border-radius: 1rem;
+#hero .paragraph .itemL {
+    width: 40%;
+    float: left;
+    text-align: start;
 }
 
-#hero .card .content button:hover {
-    background-color: var(--green);
-    color: white;
-    text-shadow: 1rem;
-    letter-spacing: 0.1rem;
-}
-
-#hero .content .paragraph .rmore {
-    display: flex;
-    justify-content: end;
+#hero .paragraph .itemR {
+    width: 60%;
+    float: left;
+    text-align: start;
 }
 
 #hero #myBtn {
@@ -65,10 +53,9 @@ hr {
     background: var(--black);
     border-radius: .5rem;
     cursor:  pointer;
-    padding: 0 2rem;
     display: inline-block;
     font-size: 1.7rem;
-    width: 15rem;
+    padding: .8rem 3rem;
 }
 
 #hero #myBtn:hover {
@@ -90,25 +77,18 @@ hr {
 }
 
 /* =========== internal atmosphere section ========== */
-#atmosphere {
-    background-color: white;
-}
 
-#atmosphere .content {
+/* #atmosphere .content {
     padding-top: 10px;
     padding-bottom: 50px;
-}
+} */
 
-.border-brack {
+/* .border-brack {
   display: flex;
   justify-content: center;
-}
+} */
 
 /* ====== vision section ======= */
-
-#vision {
-    background-color: white;
-}
 
 #vision h2 {
     text-align: center;
@@ -120,9 +100,6 @@ hr {
 }
 
 /* =========== mission section ============= */
-#mission {
-    background-color: white;
-}
 
 #mission h2 {
     text-align: center;
@@ -146,10 +123,6 @@ hr {
 #mission .body-text .card p {
     padding: 10%;
 }
-
-/* #mission .body-text .container-center {
-
-} */
 
 /* ======= safety section ======= */
 #safety {
@@ -299,44 +272,14 @@ hr {
         flex: 0 0 100%;
         max-width: 100%;
     }
-
 }
 
-/* ======= footer section ====== */
-.footer .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 1.5rem;
-}
+@media (max-width: 412px) {
+    #hero .paragraphRow .itemR {
+        width: 75%;
+    }
 
-.footer .box-container .box{
-    padding: .5rem 0;
-    font-size: 2.5rem;
-    color: var(--black);
-}
-
-.footer .box-container .box a{
-    display: block;
-    padding: .5rem 0;
-    font-size: 1.5rem;
-    color: var(--light-color);
-}
-
-.footer .box-container .box a:hover{
-    color: var(--green);
-    text-decoration: underline;
-}
-
-.footer .credit{
-    text-align: center;
-    border-top: .1rem solid rgba(0,0,0,.1);
-    font-size: 2rem;
-    color: var(--black);
-    padding-top: 1.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0;
-}
-
-.footer .credit span{
-    color: var(--green);
+    #hero .paragraphRow .itemL {
+        width: 25%;
+    }
 }
