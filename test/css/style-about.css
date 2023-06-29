@@ -7,26 +7,44 @@ hr {
     width: 50%;
 }
 
+.title {
+    font-size: 3.5rem;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.sub-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
 /* ============ hero section =============== */
 #hero .card {
     margin-top: 10vh;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 40% 60%);
+}
+
+#hero .card .content-img {
+    display: flex;
+    justify-content: center;
 }
 
 #hero .card .content-img img{
-    display: flex;
-    justify-content: center;
     width: 100%; 
-    margin-top: 10%;
+    margin-top: 5%;
     border-radius: 5rem;
+    box-shadow: var(--box-shadow);
+    margin-bottom: -15%;
 }
 
 #hero .card .content {
-    padding: 0 7% 0 7%;
+    margin-top: 10%;
 }
 
-#hero .card .content h2 {
+#hero .card .content h1 {
     text-align: center;
     padding-bottom: 10px;
 }
@@ -34,6 +52,7 @@ hr {
 #hero .card .content .paragraph {
     display: flex;
     flex-direction: column;
+    padding: 0 7% 0 10%;
 }
 
 #hero .paragraph .itemL {
@@ -89,7 +108,6 @@ hr {
 } */
 
 /* ====== vision section ======= */
-
 #vision h2 {
     text-align: center;
 }
@@ -112,9 +130,12 @@ hr {
     gap: 1.5rem;
 }
 
+#mission .containeer-center .body-text {
+    margin-top: 10%;
+}
+
 #mission .body-text .card {
     width: 100%;
-    height: auto;
     background-color: white;
     box-shadow: var(--box-shadow);
     border-radius: 5rem;
@@ -267,7 +288,15 @@ hr {
     outline: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+    #hero .card .content-img img {
+        margin-bottom: 0;
+    }
+
+    #hero .card .content {
+        margin-top: 5%;
+    }
+
     #safety .content-item .item {
         flex: 0 0 100%;
         max-width: 100%;
@@ -283,3 +312,4 @@ hr {
         width: 25%;
     }
 }
+
